@@ -18,6 +18,7 @@ set pd on
 set dpy enabled
 set dk disabled
 set stk enabled
+set imx enabled
 set tk enabled
 at tk 10000 speed=300
 # 10001 reserved for GE bagbiters, hah.
@@ -40,9 +41,12 @@ at dpa0 out/pdp10-ka/rp03.2
 at dpa1 out/pdp10-ka/rp03.3
 at dpa2 out/pdp10-ka/rp03.0
 at dpa3 out/pdp10-ka/rp03.1
+set imx mpx=3
 set mta mpx=7
 set mta type=b
 set dt mpx=6
 set imp mpx=4
+set wcnsls enabled
+set wcnsls joystick
 set dpa noheaders
 b ptr
